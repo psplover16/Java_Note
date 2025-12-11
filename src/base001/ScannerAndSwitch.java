@@ -7,7 +7,7 @@ public class ScannerAndSwitch {
 
 
     public ScannerAndSwitch() {
-        switchTest(1);
+        switchTest(3);
         scannerTest();
     }
 

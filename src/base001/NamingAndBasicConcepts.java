@@ -14,9 +14,10 @@ public class NamingAndBasicConcepts {
     public NamingAndBasicConcepts() {
 //      static
         bitTest();
-//      因為method沒有 static ，所以需要創建
-        NamingAndBasicConcepts newNamingAndBasicConcepts = new NamingAndBasicConcepts();
-        newNamingAndBasicConcepts.byteTest();
+//      因為method沒有 static ，所以需要創建，但此處不能這樣寫，會造成無限迴圈
+//        NamingAndBasicConcepts newNamingAndBasicConcepts = new NamingAndBasicConcepts();
+//        newNamingAndBasicConcepts.byteTest();
+
 //        同一個 class可以直接引用
         byteTest();
 

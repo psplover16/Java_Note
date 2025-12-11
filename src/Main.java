@@ -9,33 +9,33 @@ public class Main {
 //        ❌ main 通常是程式起始，不是業務邏輯
 
 
-//        命名與基礎觀念
+////        命名與基礎觀念
 //        new NamingAndBasicConcepts();
 //        new ScannerAndSwitch();
 //        new BasicTypeConversion();
 ////        非常少用
-//        systemConsoleTest();
-
-//        字串使用
+////        systemConsoleTest(); // IDE會報錯
+////        字串使用
 //        new StringMain();
-
-
-////  封裝（Encapsulation）
+//
+////        封裝（Encapsulation）
 //        new Encapsulation();
-////  繼承（Inheritance）
+////        繼承（Inheritance）
 //        new Inheritance();
-////  多型（Polymorphism）
+////        多型（Polymorphism）
 //        new Polymorphism();
-////  組合（Composition）
+////        組合（Composition）
 //        new Composition();
+//
+////        Record的使用
+//        new RecordUse();
+////        陣列的使用
+//        new ArrDemo1();
 
 
-////        Record用法
-//        RecordDemo recordPerson = new RecordDemo("Gary", 30);
-////        RecordDemo recordPerson = new RecordDemo("Gary", -5); // 驗證拋出錯誤
-//        System.out.println(recordPerson.name()); // Gary
-//        System.out.println(recordPerson.sayHello()); // Hi, I'm Gary
-//        System.out.println(recordPerson);        // print會呼叫 實例化變數的toString
+//        List的使用
+
+
 ////
 //        printLine();
 //        new ListDemo1();

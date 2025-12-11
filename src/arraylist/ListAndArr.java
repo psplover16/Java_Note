@@ -8,18 +8,6 @@ import java.util.List;
 //ArrayList vs Array
 public class ListAndArr {
     public ListAndArr() {
-//        基本型別 / 原始型別，指的是 不是物件、不是 class、不是 reference type 的那 8 種最底層資料型別。
-//        這些是 Java 唯一不是物件的類型。
-//        因為 primitives 不是物件，所以 Java 做了一組「包裝類」：  資料結構中（List, Map, Stream）就不能用 primitive，只能用 wrapper
-//        primitive	wrapper
-//        int	Integer
-//        double	Double
-//        boolean	Boolean
-//        char	Character
-//        byte	Byte
-//        short	Short
-//        long	Long
-//        float	Float
         List<Integer> nextList;
 //        List<int> nextList;  // 錯誤
         int[] nextArr;

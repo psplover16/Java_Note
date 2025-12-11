@@ -30,22 +30,36 @@ public class BasicTypeConversion {
 
 //        解析 char（不是 parse，用字串轉型），此處特別
         char c = "A".charAt(0);
-
-
     }
-
 
     public void parseNumDanger(String input) {
         try {
             int n = Integer.parseInt(input);
+            System.out.println(n);
         } catch (NumberFormatException e) {
             System.out.println("不是合法的整數");
         }
 
-////        scanner有專門用法
-//        if (scanner.hasNextInt()) {
-//            int n = scanner.nextInt();
-//        }
+    }
+
+
+    void primitiveIntro() {
+//        基本型別 / 原始型別，指的是 不是物件、不是 class、不是 reference type 的那 8 種最底層資料型別。
+//        這些是 Java 唯一不是物件的類型。
+//        因為 primitives 不是物件，所以 Java 做了一組「包裝類」：  資料結構中（List, Map, Stream）就不能用 primitive，只能用 wrapper
+//        primitive	wrapper
+//        int	Integer
+//        double	Double
+//        boolean	Boolean
+//        char	Character
+//        byte	Byte
+//        short	Short
+//        long	Long
+//        float	Float
+
+//        primitive 不能直接是 Object，但 Java 會自動裝箱成 wrapper（int → Integer），就變成 Object。
+        Object o = 10; // OK（10 → Integer → Object）
+//        Object o = (Object) 10; // ❌ int 不能直接 cast 成 Object
     }
 
 

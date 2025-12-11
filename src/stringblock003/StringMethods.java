@@ -130,7 +130,7 @@ public class StringMethods {
         String result = str1 + " " + str2 + " " + str3;
         result = str1.concat(str2).concat(str3); // concat 方法用來連接字串
         System.out.printf("Concatenated String: %s%n", result); // HelloWorld2024
-        // join 方法可以用來連接多個字串，並在它們之間插入指定的分隔符號
+        // join 方法可以用來連接多個字串或字串陣列，並在它們之間插入指定的分隔符號
         result = String.join("!", str1, str2, str3); // 使用 ! 作為分隔符號
         System.out.printf("Concatenated String: %s%n", result); // Hello!World!2024
 
