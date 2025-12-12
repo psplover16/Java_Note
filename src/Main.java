@@ -1,5 +1,9 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+import arraylist006.ArrayList006;
+import base001.Base001;
+
 public class Main {
 
     //    main為static，不能直接呼叫main非static的函數
@@ -10,9 +14,7 @@ public class Main {
 
 
 ////        命名與基礎觀念
-//        new NamingAndBasicConcepts();
-//        new ScannerAndSwitch();
-//        new BasicTypeConversion();
+//        new Base001();
 ////        非常少用
 ////        systemConsoleTest(); // IDE會報錯
 ////        字串使用
@@ -33,16 +35,9 @@ public class Main {
 //        new ArrDemo1();
 
 
-//        List的使用
+////        List的使用
+//        new ArrayList006();
 
-
-////
-//        printLine();
-//        new ListDemo1();
-//        printLine();
-//        new ListAndArr();
-//        printLine();
-//        new ListChallenge1();
     }
 
 

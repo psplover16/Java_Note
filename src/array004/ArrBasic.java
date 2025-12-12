@@ -64,7 +64,8 @@ public class ArrBasic {
         String[] strArr = new String[]{"Gary", "Dainel", "Apple", "Jay"};
         Arrays.sort(strArr);
 //        ⼆元搜尋，從中間找，看往前還往後，一直持續
-//        陣列 一定要已經排序（Sort）
+//        陣列 一定要已經排序（Sort），否則結果不正確。
+//        回傳 index。 若 index < 0，表示找不到
         int indexBinary = Arrays.binarySearch(strArr, "Gary"); // 找到在排序第幾個index (數字)
 
 //        陣列 值 是否相同，而非記憶體位置， === 是表示記憶體位置
