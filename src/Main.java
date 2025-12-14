@@ -1,8 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
-import arraylist006.ArrayList006;
-import base001.Base001;
+import list006.List006;
 
 public class Main {
 
@@ -36,7 +35,7 @@ public class Main {
 
 
 ////        List的使用
-//        new ArrayList006();
+        new List006();
 
     }
 

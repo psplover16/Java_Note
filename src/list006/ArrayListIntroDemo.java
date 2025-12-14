@@ -1,4 +1,4 @@
-package arraylist006;
+package list006;
 import java.util.*;
 
 public class ArrayListIntroDemo {
@@ -12,7 +12,8 @@ public class ArrayListIntroDemo {
         // 底層為動態陣列（容量不足會自動擴充）
         // 只能存放 reference type（不能放 primitive(基礎型別)）
 
-        List<String> list = new ArrayList<>();
+        int capacity = 50_000;
+        List<String> list = new ArrayList<>(capacity); // 設置一個「最多能放幾個」的arrayList，超過會擴充。 具體擴充多少，官方沒保證，但差不多1.5
 
         list.add("Gary");
 
@@ -20,6 +21,12 @@ public class ArrayListIntroDemo {
         list.set(0, "def"); // 修改
         list.remove(0); // 刪 index
         list.remove("def"); // 刪值（若存在）
+
+//        System.out.println(list.size());
+//        for (int i = 0; i < capacity + 100; i++) {
+//            list.add(1, String.valueOf(i));
+//        }
+//        System.out.println(list.size());
 
         System.out.println(list.get(0));
 

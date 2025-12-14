@@ -1,4 +1,4 @@
-package arraylist006;
+package list006;
 
 import java.util.*;
 
@@ -42,7 +42,7 @@ public class ArrayVsArrayListDemo {
         // binarySearch 必須先 sort，否則結果不正確。回傳 index。 若 index < 0，表示找不到
         int index = Arrays.binarySearch(strArr, "one");
 
-        boolean contains = list.contains("one");
+        boolean contains = list.contains("one"); // 本質與 equals() 相同，而非 ==
         int firstIndex = list.indexOf("one");
         int lastIndex = list.lastIndexOf("one");
 
