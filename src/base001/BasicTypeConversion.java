@@ -62,5 +62,20 @@ public class BasicTypeConversion {
 //        Object o = (Object) 10; // ❌ int 不能直接 cast 成 Object
     }
 
+    void compileAndRuntime() {
+//        Queue<String> queueList = new LinkedList<>();
+//        int[] a = new int[5];
+//        Animal dog = new Dog();
+
+//        以上三者，左邊都是編譯期型別（Compile - time Type），編譯器在「編譯時期」用來檢查你能不能這樣寫程式的型別
+//        右邊則是 執行期型別（Runtime Type），程式跑起來後，記憶體中「真正存在的物件型別」，實際執行哪個版本的方法
+
+//        左邊其實是限制器、是規則，用來限制與規定右邊的方法
+//        對應的正式版本是：
+//        左邊（編譯期型別）定義「我允許你使用哪些方法」
+//        右邊（執行期型別）決定「實際執行哪一個實作」
+
+    }
+
 
 }

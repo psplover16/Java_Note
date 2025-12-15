@@ -70,28 +70,9 @@ public class LinkedListDemo {
 
         dequeList.removeFirst(); // 從前端拿，回傳 1
         dequeList.removeLast(); // 從尾端拿，回傳 3
+        //
+        //
 
-        //
-        //
-        //
-        // Queue<E> 是介面，定義規則，表示 我現在要用的是『Queue 的行為，本身 不能 new，要搭配實作(類別)一起用
-        // LinkedList<E> 是 類別（class） / 是一種具體資料結構 / 實作了多個介面，所以符合List / Queue / Stack
-        // (因為本身是Deque)
-        //
-        //
-        //
-        //
-        //
-        // LinkedList<String> vs Deque<String>，後者比較好的意思??
-        // Deque<String> 通常比較好，而且是「實務上的好」； 前提是你真的在做 Queue / Stack 的事情。
-        //
-        //
-        //
-        //
-        //
-        // 1. 那其實幾乎只用 Deque ，很少用 Stack及 java.util.Queue ??
-        // 2. 我可以理解成
-        // LinkedList <String >可用方法比 Deque<String> = new LinkedList<>() 還多??
     }
 
 }
