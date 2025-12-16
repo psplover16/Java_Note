@@ -32,7 +32,7 @@ public class IteratorDemo {
         list.add("A");
         list.add("B");
         list.add("C");
-        ListIterator<String> it = list.listIterator(); // ListIterator 只能用在 List，是 Iterator的強化版
+        ListIterator<String> it = list.listIterator(0); // ListIterator 只能用在 List，是 Iterator的強化版 // 後面的數字表示預設選取器位置
 
         it.nextIndex(); // 0，「如果現在再呼叫 next()，會回傳哪個元素的 index」
         it.hasNext();   // true，後面還有沒有元素

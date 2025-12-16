@@ -45,7 +45,6 @@ public class LinkedListDemo {
         queueList.offer("D");
         queueList.add(null);
         System.out.println(queueList.toString()); // [A, B, C, D, null]
-        //
         // 出列，前端拿走
         queueList.remove(); // A，移除並回傳隊首元素，若隊列為空，則丟 NoSuchElementException
         queueList.poll(); // B，移除並回傳隊首元素，若隊列為空，則回傳 null
@@ -67,7 +66,7 @@ public class LinkedListDemo {
         System.out.println(dequeList.toString()); // [1, 2, 3]
         System.out.println(dequeList.peekFirst()); // 看前端，不移除 1
         System.out.println(dequeList.peekLast()); // 看尾端，不移除 3
-
+        dequeList.contains("1"); // 會遍歷
         dequeList.removeFirst(); // 從前端拿，回傳 1
         dequeList.removeLast(); // 從尾端拿，回傳 3
         //
