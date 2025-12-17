@@ -1,4 +1,4 @@
-package list006;
+package list006.challenge;
 
 import java.util.LinkedList;
 import java.util.ListIterator;
@@ -48,7 +48,7 @@ public class IteratorChallenge {
         while (iterator.hasNext()) {
             Place place = iterator.next();
 
-            if (place.name.equals(newPlace.name)) {
+            if (place.name.equalsIgnoreCase(newPlace.name)) {
 //                還沒增加過，直接不做事
                 if (!alreadyJoin) {
                     return;
@@ -92,7 +92,8 @@ class Place {
     }
 
     public String toString() {
-        return name + " : " + distance;
+        // return name + " : " + distance;
+        return String.format("%s : %d", name, distance);
     }
 
 }
