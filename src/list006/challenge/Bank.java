@@ -12,8 +12,8 @@ public class Bank {
     }
 
     public void addCustomer(Customer customer) {
-        if (getCustomer(customer.getName()) != null) {
-            System.out.println("Customer " + customer.getName() + " already exists.");
+        if (getCustomer(customer.name()) != null) {
+            System.out.println("Customer " + customer.name() + " already exists.");
             return;
         }
         customers.add(customer);
@@ -21,7 +21,7 @@ public class Bank {
 
     Customer getCustomer(String name) {
         for (Customer c : customers) {
-            if (c.getName().equals(name)) {
+            if (c.name().equals(name)) {
                 return c;
             }
         }
@@ -44,9 +44,9 @@ public class Bank {
     public void printCustomers() {
         System.out.println("Customers of Bank: " + name);
         for (Customer c : customers) {
-            System.out.println("name: " + c.getName());
+            System.out.println("name: " + c.name());
 
-            for (var amount : c.getContaining()) {
+            for (var amount : c.containing()) {
                 // 手動拆箱
                 // double aa = amount.doubleValue();
                 // System.out.printf(" transaction: %.2f\n", aa);
