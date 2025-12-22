@@ -4,7 +4,7 @@ public class BasicTypeConversion {
 //    private 只能在內部使用，外部無法呼叫
 //    default 看庫，庫相同即可呼叫
 //    protected 子類(不同庫) / 同庫可以呼叫
-
+//    在最頂層只能用private 及 default，設計問題
     public BasicTypeConversion() {
         parseFunc();
         parseNumDanger("123"); // 解析數字要小心

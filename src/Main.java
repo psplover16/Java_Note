@@ -1,7 +1,7 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
-import list006.List006;
+import abstractionAndInterface007.AbstractDemo;
 
 public class Main {
 
@@ -35,7 +35,9 @@ public class Main {
 
 
 ////        List的使用
-        new List006();
+//        new List006();
+
+        new AbstractDemo();
 
     }
 
