@@ -2,22 +2,21 @@ package abstractionAndInterface007;
 
 public class AbstractDemo {
     public AbstractDemo() {
-
-//        編譯時，用yellow的角度去檢查；但用dog去往繼承鍊查找方法。
+        // 編譯期決定「你能不能這樣寫」，看左邊宣告型別，防止寫出不合法的程式
+        // 執行期決定「實際跑的是哪個實作」，看右邊，真正跑哪個版本（多型）
+        // 編譯時，用Animal的角度去檢查；但用dog去往繼承鍊查找方法。
         Animal yellowDog = new Dog("yellowDog");
         System.out.println(yellowDog); // 類別完整名稱 + "@" + 物件hashCode的16進位表示
         yellowDog.animalScared();
-        yellowDog.move();
+        yellowDog.move(); // 實際執行Dog的move，type是Dog
         yellowDog.sound();
         yellowDog.bark();
 
-//        yellowDog.jump();
-//        yellowDog.eat();
+        // yellowDog.jump();
+        // yellowDog.eat();
     }
 
-
 }
-
 
 abstract class Animal {
     protected void animalScared() {
@@ -31,7 +30,7 @@ abstract class Animal {
     protected void bark() {
         System.out.println("Bark");
     }
-//    private void eat(); // abstract必定繼承
+    // private void eat(){}; // abstract必定繼承
 }
 
 abstract class Mammal extends Animal {
@@ -44,7 +43,7 @@ abstract class Mammal extends Animal {
 
     @Override
     protected void move() {
-        System.out.println("哺乳動物的移動");
+        System.out.println("哺乳動物的移動，型別是: " + getClass().getSimpleName());
     }
 
     @Override
@@ -54,7 +53,7 @@ abstract class Mammal extends Animal {
 
     @Override
     protected void bark() {
-//        super.bark();
+        // super.bark();
         System.out.println("狗在狂吠");
     }
 
