@@ -8,13 +8,28 @@ class Dog extends Animal {
         super(); // 預設，呼叫父層建構子
     }
 
-//    覆寫
+//    覆寫，以下狀況不能用
+//    1. 存取權限不能變小(為了遵守「父型別能用的地方，子型別一定也能用」)
+
+//      範例，可以參考繼承，若子層權限變小，則執行期會有問題
+//    class Animal {
+//        public void move() {}
+//    }
+//    class Dog extends Animal {
+//        @Override
+//        protected void move() {} // ❌ 不允許（權限變小）
+//    }
+//      Animal a = new Dog(); // 編譯期參考Animal，但執行期發現實際根本沒有那麼大的權限
+//      權限高低，private>default>protected>public
+
+//    2. 丟出的例外不能更寬，不能讓使用父型別的人，突然要處理「更多或更泛的例外」
+//    3. 不能覆寫final / static / private
     @Override
     public void eat() {   // ✔ 正確覆寫方法
         System.out.println("Dog is eating");
     }
 
-//    overload 多載，藉由不同變數讓 相同函數名稱，做不同事情
+    //    overload 多載，藉由不同變數讓 相同函數名稱，做不同事情
     public void eat(String food) {   // ✔ 正確覆寫方法
         System.out.println("Dog is eating" + food);
     }
