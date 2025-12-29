@@ -10,6 +10,7 @@ public class InterfaceDemo {
 
         Flyable f = (Flyable) a; // 將a當成Flyable看待(並非轉成另一個物件，而是換一個角度來看)，然後用f存起來
         f.fly(); // Eagle的實作
+        f.getFlyable();
 
 // //       安全作法
 //        if (a instanceof Flyable f) {
@@ -134,7 +135,7 @@ class Jet implements AirVehicle {
 //int x = 10; // 等同於 public static final int x = 10; ，值都不可以更改
 //方法，
 //1-A. 抽象方法 (沒有方法本體)，此為預設方法，只能是 public abstract，但可以不寫，隱式自動表達
-//interface具有方法本體一定要是 default / static / private
+//interface具有方法本體一定要是 default / static / private，不可以不加
 //1-B. default方法 (表示有實作方法本體)，若要用default，則一定要寫default，一定是public，但public可以不寫，允許被override
 //1-C. static方法，一定是public，但public可以不寫， 不能被override，與interface綁定
 //1-D. private方法，只能在interface內部使用，不能被實作類別看到，常用來給default方法共用邏輯
