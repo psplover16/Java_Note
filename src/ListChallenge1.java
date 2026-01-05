@@ -3,6 +3,7 @@ import java.util.*;
 public class ListChallenge1 {
     private Scanner sc = new Scanner(System.in);
     //    private Scanner sc2 = new Scanner(System.in);
+//    """  用來宣告「多行字串」的語法
     private String noticeText = """
             Available actions:
             0 - to shutdown
