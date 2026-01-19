@@ -164,6 +164,12 @@ class Jet implements AirVehicle {
 //4-D. static 方法，不會被繼承，綁訂在interfaceName，所以不會有衝突
 //4-E. private，只能在interface內部作用，所以也不會有衝突
 //
+// 
+// 5. interface中的 default方法  vs   一般class的default方法
+// 5-A. interface 的 default 方法表示：所有實作該 interface 的 class，會「自動擁有」這個方法的預設實作，且可選擇是否 override。
+// 若 沒有 override → 使用 interface 的預設實作 若 有 override → 使用 class 自己的實作 若 多個 interface 有相同 default 方法 → 強制 override（解衝突）
+// 5-B. class 裡的 default 方法只是表示：該方法是 package-private（僅同一 package 可用）
+
 //幫我詳細介紹一下 interface的default方法，包含怎麼用?? 以及常見的問題?? 什麼時候需要用 interfaceName.super ?
 
 
