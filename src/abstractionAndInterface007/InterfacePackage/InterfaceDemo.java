@@ -1,4 +1,4 @@
-package abstractionAndInterface007.InterfacePackage;
+//package abstractionAndInterface007.InterfacePackage;
 
 public class InterfaceDemo {
     public InterfaceDemo() {
